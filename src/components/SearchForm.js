@@ -8,7 +8,7 @@ const SearchForm = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    dispatch(setPage(1)); // Reset to page 1 on new search
+    dispatch(setPage(1)); 
     dispatch(fetchMovies({ term, page: 1 }));
   };
 
@@ -16,12 +16,12 @@ const SearchForm = () => {
     <form onSubmit={handleSearch}>
       <header>
         <input
-          className="search"
+          className="search text-black"
           type="search"
           placeholder="Search..."
           onChange={(e) => setTerm(e.target.value)}
         />
-        <button type="submit" className='bg-green-400 text-gray-50'>Search</button>
+        <button type="submit" className='bg-green-400 text-black'>Search</button>
       </header>
     </form>
   );

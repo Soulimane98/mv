@@ -1,4 +1,3 @@
-// src/store/moviesSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const API_KEY = 'fa1192549721df01a1fb28a7788e6608';
